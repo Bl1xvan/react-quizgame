@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "q":"Favorite Color",
+      "q":"favorite color",
       "a" : "Red",
       "b" : "Green",
       "c" : "Blue",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "q" : "Favorite Animal",
+        "q" : "favorite animal",
         "a" : "Cat",
         "b" : "Giraffe",
         "c" : "Narwhal",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "q" : "Favorite Food",
+        "q" : "favorite food",
         "a" : "Apple",
         "b" : "Cake",
         "c" : "Chicken",

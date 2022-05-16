@@ -13,10 +13,10 @@ function App() {
         <div class="quiz quiz-onecard" key={question.id}>
           <div class="quiz quiz-question">What is your {question.q}?</div>
           <div class="answer-wrapper">
-              <div class="quiz quiz-answer">{question.a}</div>
-              <div class="quiz quiz-answer">{question.b}</div>
-              <div class="quiz quiz-answer">{question.c}</div>
-              <div class="quiz quiz-answer">{question.d}</div>
+              <div class="quiz quiz-answer">a. {question.a}</div>
+              <div class="quiz quiz-answer">b. {question.b}</div>
+              <div class="quiz quiz-answer">c. {question.c}</div>
+              <div class="quiz quiz-answer">d. {question.d}</div>
           </div>
           <div class="quiz quiz-submit">Submit</div>
         </div>
