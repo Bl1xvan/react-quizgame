@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//bl1xvan.github.io/react-quizgame/static/css/main.457208d4.css",
+    "main.js": "//bl1xvan.github.io/react-quizgame/static/js/main.3be33f2b.js",
+    "static/js/787.0fbbf35d.chunk.js": "//bl1xvan.github.io/react-quizgame/static/js/787.0fbbf35d.chunk.js",
+    "index.html": "//bl1xvan.github.io/react-quizgame/index.html",
+    "main.457208d4.css.map": "//bl1xvan.github.io/react-quizgame/static/css/main.457208d4.css.map",
+    "main.3be33f2b.js.map": "//bl1xvan.github.io/react-quizgame/static/js/main.3be33f2b.js.map",
+    "787.0fbbf35d.chunk.js.map": "//bl1xvan.github.io/react-quizgame/static/js/787.0fbbf35d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.457208d4.css",
+    "static/js/main.3be33f2b.js"
+  ]
+}
