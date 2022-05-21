@@ -1,30 +1,18 @@
 
 import './App.css';
-import Questions from "./data/questions.json"
+import AllQuestions from './AllQuestions'
 
 function App() {
+
   return (
-    <div class="container">
-      <div class="quiz quiz-container">
-      <div class="quiz quiz-header"><h1>Quiz Game</h1></div>
-    <div class="quiz-allcards">
-   {Questions && Questions.map(question=>{
-      return(     
-        <div class="quiz quiz-onecard" key={question.id}>
-          <div class="quiz quiz-question">What is your {question.q}?</div>
-          <div class="answer-wrapper">
-              <h3>Hi</h3>
-              <div class="quiz quiz-answer">a. {question.a}</div>
-              <div class="quiz quiz-answer">b. {question.b}</div>
-              <div class="quiz quiz-answer">c. {question.c}</div>
-              <div class="quiz quiz-answer">d. {question.d}</div>
-          </div>
-          <div class="quiz quiz-submit">Submit</div>
-        </div>
-     )})}
-     </div>
-     </div>
-     </div>
+    <div className="container">
+    <div className="quiz quiz-container">
+    <div className="quiz quiz-header"><h1>Quiz Game</h1></div>
+    <div className="quiz-allcards">
+        <AllQuestions />
+    </div>
+    </div>
+    </div>
   );
 }
 
