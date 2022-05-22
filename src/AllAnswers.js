@@ -1,7 +1,7 @@
-import React from 'react'
 
-export default function AllAnswers({answer, displayAnsw}) {
-  return (
-     <div className="quiz quiz-answer" onClick={displayAnsw}>{answer.answ}</div>
-  )
+
+export default function AllAnswers({answer}) {
+      return (
+        <div className="quiz quiz-answer" onClick={answer.chooseAnsw}>{answer.answ}</div>
+      )
 }
