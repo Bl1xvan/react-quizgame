@@ -1,34 +1,31 @@
-import React from 'react'
-import Questions from './data/questions.json'
+import React, {useState} from 'react'
+import AllAnswers from './AllAnswers'
 
+export default function AllQuestions({questions}){
 
+      const [clickedAnsw, setClickedAnsw] = useState("");
 
-function AllQuestions(){
+      function displayAnsw(e){
+        return setClickedAnsw(e.target.innerText)
+      }
 
-  class AllAnswers extends React.Component{
-    render(){
-      return <div className="quiz quiz-answer">{this.props.answer}</div>
+      return(<>{questions.map(question => 
+        <div className="quiz quiz-onecard" key={question.id}>
+        <div className="quiz quiz-question">What is your {question.ques}?</div>
+        <div className="answer-wrapper">
+         { question.answs.map(answer => {
+            return <AllAnswers answer={answer} key={answer.id} displayAnsw={displayAnsw} />
+          })}
+          <div className='quiz quiz-clicked' >
+          answer: 
+          </div>
+        </div>
+        <div className="quiz quiz-submit">Submit</div>
+        </div>
+        )
+    }</>)
     }
-  }
-  
-  const  DisplayQuestions = Questions.map(question => {
-    return(
-      <div className="quiz quiz-onecard" key={question.id}>
-      <div className="quiz quiz-question">What is your {question.ques}?</div>
-      <div className="answer-wrapper">
-       { question.answs.map(data => {
-          return <AllAnswers key={data.id} answer={data.answ} />
-        })}
-      </div>
-      <div className="quiz quiz-submit">Submit</div>
-      </div>
-    )
-  })
 
-  return(
-        <>{DisplayQuestions}</>
-  )
-}
 
-export default AllQuestions
+
 
