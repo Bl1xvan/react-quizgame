@@ -1,8 +1,10 @@
 
 
-export default function AllAnswers({answer, chooseAnsw}) {
-
+export default function AllAnswers({answer, chooseAnsw, question}) {
+  function clickAnsw(){
+    chooseAnsw(question.id)
+  }
       return (
-        <div className="quiz quiz-answer" onClick={chooseAnsw}>{answer.answ}</div>
+        <div className="quiz quiz-answer" onClick={clickAnsw}>{answer.answ}</div>
       )
 }
