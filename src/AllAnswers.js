@@ -1,7 +1,8 @@
 
 
-export default function AllAnswers({answer}, props) {
+export default function AllAnswers({answer, chooseAnsw}) {
+
       return (
-        <div className="quiz quiz-answer" onClick={props.chooseAnsw}>{answer.answ}</div>
+        <div className="quiz quiz-answer" onClick={chooseAnsw}>{answer.answ}</div>
       )
 }

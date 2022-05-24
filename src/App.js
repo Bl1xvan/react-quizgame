@@ -11,6 +11,8 @@ function App() {
     setQuestion(Questions.map(inquiry=>inquiry))
   }, [])
 
+
+
   return (
     <div className="container">
     <div className="quiz quiz-container">
