@@ -1,10 +1,30 @@
+import React from 'react'
 
-
-export default function AllAnswers({answer, chooseAnsw, question}) {
-  function clickAnsw(){
-    chooseAnsw(question.id)
-  }
+export default function AllAnswers({question}) {
+  class ShowAnsw extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        chosenAnsw: "",
+      };
+    }
+    chooseAnsw = (e) => {
+      this.setState({chosenAnsw: e.target.innerText});
+    }
+    render() {
       return (
-        <div className="quiz quiz-answer" onClick={clickAnsw}>{answer.answ}</div>
-      )
+        <>
+      {question.answs.map(answer => 
+        <div className="quiz quiz-answer" onClick={this.chooseAnsw}>{answer.answ}</div>
+      )}
+        <div>
+          <p>answer: {this.state.chosenAnsw}</p>
+        </div>
+        </>
+      );
+    }
+  }
+
+    return(<ShowAnsw />)  
+      
 }
