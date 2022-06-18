@@ -8,10 +8,13 @@ body{
   font-family: Arial, sans-serif;
 }
 .container{
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
+
+
 
 .quiz{
   padding: 15px;
@@ -35,12 +38,6 @@ body{
   position: relative;
 }
 
-.quiz.quiz-onecard{
-  width: 100%;
-  background-color: #ffc2ed;
-  
-}
-
 .quiz-header{
   color: #fd4988;
 }
@@ -48,7 +45,7 @@ body{
 .quiz.quiz-submit{
   background-color: #917aff;
   color: white;
-  width: 100%;
+  width: 96%;
   font-size: 1em;
 }
 

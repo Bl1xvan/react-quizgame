@@ -1,0 +1,9 @@
+.quiz.quiz-onecard{
+    width: 100%;
+    background-color: #ffc2ed;
+    position: absolute;
+    top: 0;
+    margin-right: 10px;
+    transition-property: margin-right;
+    transition-duration: 1s;
+  }

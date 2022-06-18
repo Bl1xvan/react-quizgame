@@ -11,12 +11,19 @@ function App() {
     setQuestion(Questions.map(inquiry=>inquiry))
   }, [])
 
+  const [points, setPoints] = useState(0);
+
+
+  function addPoint(point){
+    setPoints(points + point);
+  }
+
   return (
     <div className="container">
     <div className="quiz quiz-container">
     <div className="quiz quiz-header"><h1>Quiz Game</h1></div>
     <div className="quiz-allcards">
-        <AllQuestions questions={questions}/>
+        <AllQuestions questions={questions} addPoint={addPoint}/>
     </div>
     </div>
     </div>
