@@ -14,6 +14,10 @@ body{
   height: 90vh;
 }
 
+.quiz-allcards{
+  position: relative;
+}
+
 .quiz{
   padding: 15px;
   border-radius: 5px;

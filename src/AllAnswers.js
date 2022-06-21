@@ -7,9 +7,10 @@ export default function AllAnswers({question, addPoint, moveCard}){
       super(props);
       this.state = {
         chosenAnsw: "",
-        chosenPt: 0
+        chosenPt: 0,
+        right: 0
       };
-      
+    
     }
 
     chooseAnsw = (word, num) => {
