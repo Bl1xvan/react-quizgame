@@ -23,7 +23,10 @@ function App() {
     <div className="quiz quiz-container">
     <div className="quiz quiz-header"><h1>Quiz Game</h1></div>
     <div className="quiz-allcards">
-        <AllQuestions questions={questions} addPoint={addPoint} />
+    {questions.map(question => 
+        <AllQuestions question={question} addPoint={addPoint} />
+        )
+      }
     </div>
     </div>
     </div>
