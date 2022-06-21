@@ -3,10 +3,22 @@
   box-sizing: border-box;
 }
 
+.quiz.quiz-onecard{
+  width: 100%;
+  background-color: #ffc2ed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-property: left;
+  transition-duration: 0.5s;
+}
+
 body{
   font-size: 1.5em;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
+
 .container{
   display: flex;
   justify-content: center;

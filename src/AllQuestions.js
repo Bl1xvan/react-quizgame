@@ -5,19 +5,15 @@ import AllAnswers from './AllAnswers'
 
 export default function AllQuestions({question, addPoint}){
 
-   const styles = {
-      width: '100%',
-      backgroundColor: '#ffc2ed',
-      position: 'absolute',
-      top: '0'
+    const [startAnimation, setStartAnimation] = useState(false);
+    function moveCard(){
+      setStartAnimation(!startAnimation)
     }
 
-    const [right, setRight] = useState(0);
-    function moveCard(){
-      setRight(500)
-    }
+    const transitionProperties = startAnimation ? {left: '1000px'} : {}
+
          return(<>
-            <div className="quiz quiz-onecard" style={{...styles, right: `${right}px`}} >
+            <div className="quiz quiz-onecard" style={transitionProperties} >
                <div className="quiz quiz-question">What is your {question.ques}?</div>
                   <AllAnswers question={question} addPoint={addPoint} moveCard={moveCard}/>
                </div>
