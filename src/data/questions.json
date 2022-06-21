@@ -2,22 +2,22 @@
     {
       "id": 3,
       "ques":"favorite color",
-      "answs" : [{"id": 1, "answ": "red", "pt": 1}, {"id": 2, "answ": "blue", "pt": 0},
-            {"id": 3, "answ": "green", "pt": 0}, {"id": 4, "answ": "yellow", "pt": 2}],
+      "answs" : [{"id": 4, "answ": "red", "pt": 1}, {"id": 5, "answ": "blue", "pt": 0},
+            {"id": 6, "answ": "green", "pt": 0}, {"id":7, "answ": "yellow", "pt": 2}],
       "response": ""
     },
   {
     "id": 2,
     "ques":"favorite food",
-    "answs" : [{"id": 5, "answ": "pie", "pt": 1}, {"id": 6, "answ": "chicken", "pt": 0},
-          {"id": 7, "answ": "pizza", "pt": 0}, {"id": 8, "answ": "peas", "pt": 2}],
+    "answs" : [{"id": 8, "answ": "pie", "pt": 1}, {"id": 9, "answ": "chicken", "pt": 0},
+          {"id": 10, "answ": "pizza", "pt": 0}, {"id": 11, "answ": "peas", "pt": 2}],
     "response": ""
   },
   {
     "id": 1,
     "ques":"favorite animal",
-    "answs" : [{"id": 9, "answ": "cat", "pt": 1}, {"id": 10, "answ": "chicken", "pt": 0},
-          {"id": 11, "answ": "dog", "pt": 0}, {"id": 12, "answ": "rabbit", "pt": 2}],
+    "answs" : [{"id": 13, "answ": "cat", "pt": 1}, {"id": 14, "answ": "chicken", "pt": 0},
+          {"id": 15, "answ": "dog", "pt": 0}, {"id": 16, "answ": "rabbit", "pt": 2}],
     "response": ""
     }
     

@@ -14,8 +14,6 @@ body{
   height: 90vh;
 }
 
-
-
 .quiz{
   padding: 15px;
   border-radius: 5px;
@@ -32,10 +30,6 @@ body{
   max-width: 500px;
   width: 60vw;
   height: 50vh;
-}
-
-.quiz-allcards{
-  position: relative;
 }
 
 .quiz-header{

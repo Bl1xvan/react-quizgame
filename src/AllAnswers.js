@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AllAnswers({question, addPoint}){
+export default function AllAnswers({question, addPoint, moveCard}){
 
   class ShowAnsw extends React.Component {
     constructor(props) {
@@ -9,6 +9,7 @@ export default function AllAnswers({question, addPoint}){
         chosenAnsw: "",
         chosenPt: 0
       };
+      
     }
 
     chooseAnsw = (word, num) => {
@@ -18,6 +19,7 @@ export default function AllAnswers({question, addPoint}){
 
     submitResponse = () =>{
       addPoint(this.state.chosenPt);
+      moveCard();
     }
     
     
@@ -26,7 +28,7 @@ export default function AllAnswers({question, addPoint}){
         <>
       <div className="answer-wrapper">
         {question.answs.map(answer => 
-          <div className="quiz quiz-answer" onClick={()=>{this.chooseAnsw(answer.answ, answer.pt)}}>{answer.answ}</div>
+          <div key={answer.id} className="quiz quiz-answer" onClick={()=>{this.chooseAnsw(answer.answ, answer.pt)}}>{answer.answ}</div>
         )}
       </div>
       <div className="quiz show-answer">
