@@ -3,6 +3,8 @@ import React, {useState, useEffect} from 'react'
 import './App.css';
 import Questions from './data/questions.json'
 import AllQuestions from './AllQuestions'
+import LightImg from './imgclasses/LightImg';
+
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
     setPoints(points + point);
   }
 
+
   return (
     <div className="container">
     <div className="quiz quiz-container">
@@ -27,6 +30,7 @@ function App() {
         <AllQuestions key={question.id} question={question} addPoint={addPoint} />
         )
       }
+    <LightImg />
     </div>
     </div>
     </div>

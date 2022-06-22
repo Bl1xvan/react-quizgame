@@ -5,12 +5,21 @@
 
 .quiz.quiz-onecard{
   width: 100%;
-  background-color: #ffc2ed;
   position: absolute;
   top: 0;
   left: 0;
   transition-property: left;
   transition-duration: 0.5s;
+}
+
+.img-responsive{
+  width: 200px;
+  height: 200px;
+}
+
+.quiz.quiz-finalcard{
+  width: 100%;
+  background-color: #ffc2ed;
 }
 
 body{

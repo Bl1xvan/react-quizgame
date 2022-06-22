@@ -4,21 +4,21 @@
       "ques":"favorite color",
       "answs" : [{"id": 4, "answ": "red", "pt": 1}, {"id": 5, "answ": "blue", "pt": 0},
             {"id": 6, "answ": "green", "pt": 0}, {"id":7, "answ": "yellow", "pt": 2}],
-      "response": ""
+      "color": "#ffccff"
     },
   {
     "id": 2,
     "ques":"favorite food",
     "answs" : [{"id": 8, "answ": "pie", "pt": 1}, {"id": 9, "answ": "chicken", "pt": 0},
           {"id": 10, "answ": "pizza", "pt": 0}, {"id": 11, "answ": "peas", "pt": 2}],
-    "response": ""
+    "color": "#ffff99"
   },
   {
     "id": 1,
     "ques":"favorite animal",
     "answs" : [{"id": 13, "answ": "cat", "pt": 1}, {"id": 14, "answ": "chicken", "pt": 0},
           {"id": 15, "answ": "dog", "pt": 0}, {"id": 16, "answ": "rabbit", "pt": 2}],
-    "response": ""
+    "color": "#f3e6ff"
     }
     
 

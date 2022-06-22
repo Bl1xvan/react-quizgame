@@ -10,7 +10,6 @@ export default function AllAnswers({question, addPoint, moveCard}){
         chosenPt: 0,
         right: 0
       };
-    
     }
 
     chooseAnsw = (word, num) => {
