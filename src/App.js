@@ -31,7 +31,7 @@ function App() {
     <div className="quiz quiz-finalcard">
         <h3>Finish Line?</h3>
         <LightImg />
-        <button className="restart">Start Over?</button>
+        <button id="restart">Start Over?</button>
     </div>
     
     </div>
