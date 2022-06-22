@@ -14,7 +14,6 @@ function App() {
 
   const [points, setPoints] = useState(0);
 
-
   function addPoint(point){
     setPoints(points + point);
   }
@@ -29,7 +28,12 @@ function App() {
         <AllQuestions key={question.id} question={question} addPoint={addPoint} />
         )
       }
-    {points === questions.length - 1 && <LightImg />}
+    <div className="quiz quiz-finalcard">
+        <h3>Finish Line?</h3>
+        <LightImg />
+        <button className="restart">Start Over?</button>
+    </div>
+    
     </div>
     </div>
     </div>

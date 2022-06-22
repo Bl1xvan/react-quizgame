@@ -10,7 +10,6 @@ export default function AllQuestions({question, addPoint}){
       setStartAnimation(!startAnimation)
     }
     
-
     const transitionProperties = startAnimation ? {backgroundColor: question.color, left: '1000px'} : {backgroundColor: question.color}
 
          return(<>
