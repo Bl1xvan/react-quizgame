@@ -1,5 +1,5 @@
 import React from 'react'
-import newimg from './images/stockvault-aurora-borealis207582.jpg'
+import newimg from './stockvault-aurora-borealis207582.jpg'
 
 class LightImg extends React.Component{
     render(){

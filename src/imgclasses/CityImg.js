@@ -1,5 +1,5 @@
 import React from 'react'
-import newimg from './images/stockvault-city-of-metal187028.jpg'
+import newimg from './stockvault-city-of-metal187028.jpg'
 
 class CityImg extends React.Component{
     render(){

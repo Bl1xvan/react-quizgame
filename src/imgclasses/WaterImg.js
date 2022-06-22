@@ -1,5 +1,5 @@
 import React from 'react'
-import newimg from './images/stockvault-waterfall185855.jpg'
+import newimg from './stockvault-waterfall185855.jpg'
 
 class WaterImg extends React.Component{
     render(){
