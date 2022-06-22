@@ -29,7 +29,7 @@ function App() {
         <AllQuestions key={question.id} question={question} addPoint={addPoint} />
         )
       }
-    <LightImg />
+    {points === questions.length - 1 && <LightImg />}
     </div>
     </div>
     </div>
