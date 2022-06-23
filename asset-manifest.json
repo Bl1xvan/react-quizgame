@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-quizgame/static/css/main.e38dc921.css",
-    "main.js": "/react-quizgame/static/js/main.68599298.js",
+    "main.css": "/react-quizgame/static/css/main.65cfd5a4.css",
+    "main.js": "/react-quizgame/static/js/main.c9693c08.js",
     "static/js/787.0fbbf35d.chunk.js": "/react-quizgame/static/js/787.0fbbf35d.chunk.js",
     "static/media/stockvault-aurora-borealis207582.jpg": "/react-quizgame/static/media/stockvault-aurora-borealis207582.8c6ec509512b8edc408a.jpg",
     "index.html": "/react-quizgame/index.html",
-    "main.e38dc921.css.map": "/react-quizgame/static/css/main.e38dc921.css.map",
-    "main.68599298.js.map": "/react-quizgame/static/js/main.68599298.js.map",
+    "main.65cfd5a4.css.map": "/react-quizgame/static/css/main.65cfd5a4.css.map",
+    "main.c9693c08.js.map": "/react-quizgame/static/js/main.c9693c08.js.map",
     "787.0fbbf35d.chunk.js.map": "/react-quizgame/static/js/787.0fbbf35d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e38dc921.css",
-    "static/js/main.68599298.js"
+    "static/css/main.65cfd5a4.css",
+    "static/js/main.c9693c08.js"
   ]
 }
