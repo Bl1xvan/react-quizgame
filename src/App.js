@@ -32,7 +32,7 @@ function App() {
     <div className="quiz quiz-finalcard">
         <h3>Finish Line?</h3>
         <LightImg />
-        <button className="quiz quiz-submit" id="restart" onClick={moveBack}>Start Over?</button>
+        <button className="quiz quiz-submit" id="restart">Start Over?</button>
     </div>
     
     </div>
