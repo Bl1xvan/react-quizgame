@@ -18,12 +18,7 @@ function App() {
   function addPoint(point){
     setPoints(points + point);
   }
-
-  const [notMoved, setNotMoved] = useState({backgroundColor: 'white', left: 0})
   
-  function moveBack(){
-    setNotMoved({notMoved})
-  }
 
   return (
     <div className="container">
@@ -31,7 +26,7 @@ function App() {
     <div className="quiz quiz-header"><h1>Quiz Game</h1></div>
     <div className="quiz-allcards">
     {questions.map(question => 
-        <AllQuestions key={question.id} question={question} addPoint={addPoint} notMoved={notMoved} />
+        <AllQuestions key={question.id} question={question} addPoint={addPoint} />
         )
       }
     <div className="quiz quiz-finalcard">

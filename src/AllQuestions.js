@@ -3,14 +3,14 @@ import AllAnswers from './AllAnswers'
 
 
 
-export default function AllQuestions({question, addPoint, notMoved}){
+export default function AllQuestions({question, addPoint}){
 
     const [startAnimation, setStartAnimation] = useState(false);
     function moveCard(){
       setStartAnimation(!startAnimation)
     }
     
-    const transitionProperties = startAnimation ? {backgroundColor: 'white', left: '1000px'} : {notMoved}
+    const transitionProperties = startAnimation ? {backgroundColor: 'white', left: '1000px'} : {backgroundColor: 'white', left: '0'}
 
          return(<>
             <div className="quiz quiz-onecard" style={transitionProperties} >
