@@ -8,7 +8,8 @@ export default function AllAnswers({question, addPoint, moveCard}){
       this.state = {
         chosenAnsw: "",
         chosenPt: 0,
-        right: 0
+        right: 0,
+        tint : question.shade
       };
     }
 
@@ -28,7 +29,7 @@ export default function AllAnswers({question, addPoint, moveCard}){
         <>
       <div className="answer-wrapper">
         {question.answs.map(answer => 
-          <div key={answer.id} className="quiz quiz-answer" onClick={()=>{this.chooseAnsw(answer.answ, answer.pt)}}>{answer.answ}</div>
+          <div key={answer.id} style={{backgroundColor: this.state.tint }}className="quiz quiz-answer" onClick={()=>{this.chooseAnsw(answer.answ, answer.pt)}}>{answer.answ}</div>
         )}
       </div>
       <div className="quiz show-answer">

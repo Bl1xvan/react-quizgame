@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.quiz.quiz-question{
+  margin-bottom: 30px;
+  padding: 40px;
+}
 .quiz.quiz-onecard{
   width: 100%;
   position: absolute;
@@ -52,13 +56,14 @@ body{
 }
 
 .quiz.quiz-container{
-  max-width: 500px;
+  max-width: 700px;
   width: 60vw;
   height: 50vh;
 }
 
 .quiz-header{
   color: #fd4988;
+  text-align: left;
 }
 
 .quiz.quiz-submit{
@@ -71,11 +76,7 @@ body{
 .answer-wrapper{
   display: grid;
   margin: 10px;
-  grid-gap: 10px;
-}
-
-.quiz.quiz-answer{
-  background-color: #5ec6e8;
+  grid-gap: 20px;
 }
 
 .quiz.quiz-answer:hover, .quiz.quiz-submit:enabled:hover{
