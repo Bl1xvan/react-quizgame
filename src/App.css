@@ -10,6 +10,7 @@
 .quiz.quiz-onecard{
   width: 100%;
   position: absolute;
+  background-color: white;
   top: 0;
   left: 0;
   transition-property: left;

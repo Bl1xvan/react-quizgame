@@ -10,7 +10,7 @@ export default function AllQuestions({question, addPoint}){
       setStartAnimation(!startAnimation)
     }
     
-    const transitionProperties = startAnimation ? {backgroundColor: 'white', left: '1000px'} : {backgroundColor: 'white', left: '0'}
+    const transitionProperties = startAnimation ? {left: '1000px'} : {left: '0'}
 
          return(<>
             <div className="quiz quiz-onecard" style={transitionProperties} >
