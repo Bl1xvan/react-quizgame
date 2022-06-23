@@ -13,7 +13,7 @@
     "answs" : [{"id": 8, "answ": "pie", "pt": 1}, {"id": 9, "answ": "chicken", "pt": 0},
           {"id": 10, "answ": "pizza", "pt": 0}, {"id": 11, "answ": "peas", "pt": 2}],
     "color": "#ffff99",
-    "shade": "e6e600"
+    "shade": "#e6e600"
   },
   {
     "id": 1,
