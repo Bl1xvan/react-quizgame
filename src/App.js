@@ -20,7 +20,7 @@ function App() {
   }
 
   const [notMoved, setNotMoved] = useState({backgroundColor: 'white', left: 0})
-  n
+  
   function moveBack(){
     setNotMoved({notMoved})
   }
