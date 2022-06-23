@@ -19,10 +19,10 @@ function App() {
     setPoints(points + point);
   }
 
-  const [notMoved, setNotMoved] = useState({left: 0})
-  
+  const [notMoved, setNotMoved] = useState({backgroundColor: 'white', left: 0})
+  n
   function moveBack(){
-    setNotMoved({backgroundColor: 'white', left: '0'})
+    setNotMoved({notMoved})
   }
 
   return (
