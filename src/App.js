@@ -22,7 +22,7 @@ function App() {
   const [notMoved, setNotMoved] = useState({left: 0})
   
   function moveBack(){
-    setNotMoved({left: 0})
+    setNotMoved({backgroundColor: 'white', left: '0'})
   }
 
   return (
