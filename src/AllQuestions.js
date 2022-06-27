@@ -1,25 +1,33 @@
 import React, {useState} from 'react'
-import AllAnswers from './AllAnswers'
+import OneQuestion from './OneQuestion';
+import LightImg from './imgclasses/LightImg'
+
+export default function AllQuestions({questions, addPoint}){
 
 
+   const groupAnimation = '0'
+   const [allCards, setAllCards] = useState(groupAnimation);
 
-export default function AllQuestions({question, addPoint}){
+   function restartGame(newset){
+      setAllCards(newset)
+   }
 
-    const [startAnimation, setStartAnimation] = useState(false);
-    function moveCard(){
-      setStartAnimation(!startAnimation)
-    }
-    
 
-    const transitionProperties = startAnimation ? {backgroundColor: question.color, left: '1000px'} : {backgroundColor: question.color}
-
-         return(<>
-            <div className="quiz quiz-onecard" style={transitionProperties} >
-               <div className="quiz quiz-question">What is your {question.ques}?</div>
-                  <AllAnswers question={question} addPoint={addPoint} moveCard={moveCard}/>
-               </div>
-            </>)
+return(
+   <>   
+   <div className="quiz-allcards">
+      {questions.map(question => 
+         <OneQuestion key={question.id} question={question} addPoint={addPoint} allCards={allCards} restartGame={restartGame} />
+               )
       }
+   </div>
+   <div className="finalcard">
+      <LightImg />
+      <button className='restartbutton' onClick={()=>{restartGame(groupAnimation)}}>Start Over</button>
+   </div>
+   </>
+   )
+}
  
    
 
