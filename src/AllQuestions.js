@@ -6,7 +6,7 @@ export default function AllQuestions({questions, addPoint}){
 
 
    const groupAnimation = '0'
-   const [allCards, setAllCards] = useState(groupAnimation);
+   const [allCards, setAllCards] = useState(0);
 
    function restartGame(newset){
       setAllCards(newset)
