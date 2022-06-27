@@ -4,26 +4,26 @@ import LightImg from './imgclasses/LightImg'
 
 export default function AllQuestions({questions, addPoint}){
 
+const [aCard, setACard] = useState({})
+const groupMove = {
+   left: '0'
+}
 
-   const groupAnimation = '0'
-   const [allCards, setAllCards] = useState(0);
-
-   function restartGame(newset){
-      setAllCards(newset)
-   }
-
+function moveCards(newset){
+   setACard(newset)
+}
 
 return(
    <>   
    <div className="quiz-allcards">
       {questions.map(question => 
-         <OneQuestion key={question.id} question={question} addPoint={addPoint} allCards={allCards} restartGame={restartGame} />
+         <OneQuestion key={question.id} question={question} addPoint={addPoint} aCard={aCard} moveCards={moveCards}/>
                )
       }
    </div>
    <div className="finalcard">
       <LightImg />
-      <button className='restartbutton' onClick={()=>{restartGame(groupAnimation)}}>Start Over</button>
+      <button className='restartbutton' onClick={()=>{moveCards(groupMove)}}>Start Over</button>
    </div>
    </>
    )
